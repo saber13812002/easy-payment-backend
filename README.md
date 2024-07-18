@@ -6,26 +6,25 @@
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFfiu5r_DqXDQqIaH5XJ7lr3LQJWf478DDNw&usqp=CAU">
 </p>
 
-<h3 align="left"> Sobre o Projeto </h3>
+<h3 align="right"> Sobre o Projeto </h3>
 
-Este projeto é resultado do trabalho de conclusão da pós graduação em Arquitetura de software distribuído,realizado na Puc Minas e finalizado no segundo semestre de 2023.
+این پروژه نتیجه کار تحصیلی در رشته معماری نرم افزار پردازش توزیع شده است، انجام شده در دانشگاه مینا سه پوس و در پایان نیمه دوم سال 2023 می باشد.
+<h3 align="right"> Objetivos </h3>
 
-<h3 align="left"> Objetivos </h3>
+- توسعه یک معماری مبتنی بر میکروسرویس‌ها
+- نصب سرویس‌های کوچک به شکل ساده در یک خوشه کوبرنیتیس
+- پیاده سازی قابلیت بزرگ‌نمایی در میکروسرویس‌ها بر اساس تقاضای پردازش
+- پیاده سازی قابلیت مشاهده درباره زیرساخت و میکروسرویس‌ها
+- هنگامی که سیستم یک مقدار خاص پردازش را فراتر می‌رود، رویدادها را در اسلک شروع کنید.
 
-- Desenvolver um arquitetura baseada em microserviços
-- Fazer o deploy dos microserviços de forma simples em um cluster kubernetes
-- Implementar escalabilitdade nos microserviços de acordo com a demanda de processamento 
-- Implementar observabilidade sobre a infraestrutura e microserviços
-- Disparar eventos no slack quando o sistema ultrapassar determinado valor de processamento
+<h3 align="right"> Solução </h3>
 
-<h3 align="left"> Solução </h3>
-
-- Os microserviços foram desenvolvido utilizando Asp.Net Core, seguindo as melhores práticas de design como arquitetura hexagonal
-- O deployment dos microserviços foi automatizado utilizando a ferramenta Helm
-- Foi implementado a função de horizontal pod autoscaling do kubernetes
-- Foi implementada a ferramenta Prometheus e a geração de eventos customizados nos microserviços
-- Foi implementada a ferramenta Alert Manager que gera eventos a partir das métricas do Prometheus
-- Foi implementada a ferramenta Grafana para visualização de métricas
-- Foi utilizada a ferramenta jMeter para teste de performance dos microserviços
+- میکروسرویس‌ها با استفاده از Asp.Net Core توسعه یافته است، با رعایت بهترین شیوه‌های طراحی مانند معماری هگزاگونال
+- راه‌اندازی میکروسرویس‌ها با استفاده از ابزار Helm به صورت خودکار صورت گرفته است
+- وظیفه بزرگ‌نمایی خودکار کرنل‌های افقی Kubernetes پیاده‌سازی شد.
+- در میکروسرویس‌ها ابزار Prometheus و تولید رویدادهای سفارشی پیاده‌سازی شد
+- دستگیره Alert Manager پیاده سازی شده است که رویدادها را از معیارهای Prometheus تولید می کند.
+- برای نمایش متریک‌ها از ابزار Grafana استفاده شد.
+- برای تست عملکرد میکروسرویس‌ها از ابزار jMeter استفاده شد.
 
 <a href="https://drive.google.com/file/d/1plt3d7scslIfZeLujnIPw0CcJeskAIqk/view?usp=sharing">Relatório completo</a>
